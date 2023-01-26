@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*--------------------------Header----------------------*/
+header {
+  background-color: #e7eaef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#header-img {
+  width: 320px;
+  height: 45px;
+  margin-right: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 30px;
+  letter-spacing: 2px;
+  color: #000;
+}
+.nav-link:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(8, 8, 8, 25%);
+  font-size: 22.5px;
+}
+/*-------------------------------Hero----------------------------*/
+#hero {
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  display: flex;
+  justify-content: space-between;
+}
+#email {
+  width: 275px;
+  margin-bottom: 22px;
+  padding: 8px;
+  border: 0;
+  box-shadow: 0 0 5px rgba(8, 8, 8, 25%);
+}
+#submit {
+  padding: 6px 16px 6px 16px;
+  text-align: center;
+  margin: auto;
+  background-color: darkorange;
+  border-radius: 10px;
+  border-style: none;
+  color: ghostwhite;
+}
+#submit:hover {
+  box-shadow: 0 0 10px rgba(8, 8, 8, 25%);
+  font-size: 13.7px;
+}
+/*-----------------------------Features---------------------------*/
+#features {
+  padding: 16px;
+  margin-bottom: 40px;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desc {
+  width: 800px;
+}
+.desc h2,
+.desc p {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  max-width: 200px;
+  min-width: 110px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkorange;
+}
+/*---------------------How-it-Works(video)--------------------------*/
+iframe {
+  display: flex;
+  margin: auto;
+  margin-bottom: 64px;
+}
+/*-----------------------------Prices--------------------------------*/
+#prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.product {
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 300px;
+  height: content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+ol {
+  margin: 0 5px 0 5px;
+  padding: 0;
+}
+li {
+  list-style: none;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.product .level {
+  background-color: darkorange;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 44px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.product .btn {
+  background-color: darkorange;
+  border-radius: 10px;
+  border-style: none;
+  width: 116px;
+  height: 32px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: ghostwhite;
+}
+.product .btn:hover {
+  box-shadow: 0 0 10px rgba(8, 8, 8, 25%);
+  font-size: 16.5px;
+}
+/*--------------------------Footer------------------------*/
+footer {
+  background-color: #e7eaef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  margin-top: 56px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+footer li {
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 32px 8px 32px;
+}
+footer span {
+  height: 20px;
+  color: gray;
+  margin-top: 4px;
+}
+footer a {
+  color: gray;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #000;
+}
+@media screen and (max-width: 992px) {
+  #header-img {
+    margin-right: 10px;
+  }
+  .nav-link {
+    margin-right: 15px;
+  }
+  .product .level {
+    letter-spacing: 0.5px;
+    font-size: 16px;
+  }
+  li {
+    letter-spacing: 0.5px;
+    font-size: 14px;
+  }
+  .product h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    padding: 5px;
+  }
+  #header-img {
+    width: 280px;
+    height: 35px;
+    margin-right: 28px;
+  }
+  #hero {
+    margin-top: 88px;
+  }
+  iframe {
+    width: 300px;
+    height: 240px;
+    margin-bottom: 32px;
+  }
+  #features {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+  .nav-link {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .nav-link:hover {
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(8, 8, 8, 25%);
+    font-size: 18.5px;
+  }
+  #prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .product .level {
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+  li {
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+  .product h2 {
+    font-size: 20px;
+  }
+  #hero h2 {
+    text-align: center;
+  }
+  footer {
+    margin-top: 32px;
+  }
+  #features h2 {
+    font-size: 20px;
+  }
+  #features p {
+    font-size: 14px;
+  }
+  .grid {
+    height: 115px;
+  }
+  .icon {
+    height: 115px;
+    font-size: 14px;
+  }
+  footer span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 451px) {
+  header {
+    height: 88px;
+    padding: 5px;
+  }
+  #header-img {
+    width: 250px;
+    height: 27px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+  }
+  .nav-link {
+    margin-right: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-left: 20px;
+  }
+  .nav-link:hover {
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(8, 8, 8, 25%);
+    font-size: 16.5px;
+  }
+  #hero h2{
+    margin: 10px;
+    font-size: 20px;
+  }
+  #email{
+    margin-bottom: 16px;
+    width: 250px;
+  }
+  #submit.btn{
+    margin-bottom: 20px;
+  }
+  iframe {
+    width: 260px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  #features {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+  .icon {
+    width: 60px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  #features h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #features p {
+    font-size: 14px;
+  }
+  .grid {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  .desc{
+    width: 280px;
+  }
+  #prices {
+    gap: 20px;
+  }
+  .product{
+    width: 260px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  footer span {
+    font-size: 10px;
+    letter-spacing: 0.7px;
+  }
+  footer a{
+    font-size: 14px;
+  }
+  footer li{
+    margin: 0 12px 0 12px;
+  }
+}
